@@ -1,10 +1,56 @@
+:root{
+ --header-height:90px;
+ --logo-mobile-boolean:50px;
+ --aside-main:70px;
+}
+
+/*GENERAL*/
+#header-height{
+    height: var(--header-height);
+}
+
+main{
+    height: calc(100vh - var(--header-height));
+}
+
+.aside-main{
+    width: var(--aside-main);
+}
+
+main > section{
+    width: calc(100vh - var(--aside-main));
+}
+
 /*BACKGROUND*/
-.my-bg-header-sx-dx{
+
+/*Header*/
+#my-bg-header-sx{
     background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#my-bg-header-dx{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .my-bg-header{
     background-color: #F8F9FA;
+}
+
+/*Aside*/
+.my-bg-aside{
+    background-color: #142940;
+    position: relative;
+}
+
+#link-aside-bottom{
+    position:absolute;
+    bottom:20px;
+    text-align: center;
+
 }
 
 /*COLOR LINK*/
@@ -20,8 +66,38 @@
 
 /*HEADER*/
 #logo-mobile-boolean{
-    height: 50px;
-    
+    height: var(--logo-mobile-boolean);
+
 }
 
+
 /*RESPONSIVE*/
+
+/*SM*/
+@media screen and (min-width:576px) {
+
+    #aside-main > span{
+        display:none;
+    }
+
+}
+
+/*MD*/
+@media screen and (min-width:768px) {
+
+    #aside-main > span{
+        display:none;
+    }
+
+    .aside-main{
+        width: 70px;
+    }
+}
+
+/*LG*/
+@media screen and (min-width:992px) {
+
+    .aside-main{
+        width: 150px;
+    }
+}

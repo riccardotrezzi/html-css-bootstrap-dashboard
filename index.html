@@ -18,12 +18,13 @@
     <body>
 
         <!--HEADER-->
-        <header class="my-bg-header py-3">
-            <div class=" my-bg-header-sx-dx">
-                <div class="row container-fluid d-flex justify-content-between align-items-center">
+        <header id="header-height" class="my-bg-header py-3">
+            
+            <div class=" container-fluid  align-items-center h-100">
+                <div class="row">
                     <!--NAVBAR-->
                     <!--Brand Area-->
-                    <div class="col-2">
+                    <div id="my-bg-header-sx" class="col-2">
                         <div class="navbar">
                             <div class="container bg-white">
                                 <a href="#" class="navbar-brand d-lg-none">
@@ -55,7 +56,7 @@
 
                     <!--Link Icon-->
 
-                    <div class="col-2 ">
+                    <div id="my-bg-header-dx" class="col-2">
                         <div class="container d-lg-flex flex-row">
                             <ul class="list-inline pt-3 text-end">
                                 <li  class="list-inline-item align-middle d-lg-inline-block d-sm-none d-md-none">
@@ -81,11 +82,43 @@
                             </ul>
                         </div>
                     </div>
-                
                 </div>
-
+                
             </div>
         </header>
+        
+        <!--MAIN-->
+        <main class="d-flex">
+
+            <!--ASIDE-->
+            <aside class="aside-main my-bg-aside py-3">
+                <div class="text-white text-center fs-6">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Home</span>
+                </div>
+
+                <div class="text-white text-center fs-6">
+                    <i class="bi bi-reception-3"></i>
+                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Stats</span>
+                </div>
+
+                <div class="text-white text-center fs-6">
+                    <i class="bi bi-reception-4"></i>
+                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Signals</span>
+                </div>
+
+                <div id="link-aside-bottom" class="text-white text-center fs-6">
+                    <i class="bi bi-gear-fill"></i>
+                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Admin</span>
+                </div>
+            </aside>
+
+            <!--SEZIONE MAIN-->
+            <section>
+
+            </section>
+        </main>
+        
 
         <!--CDN Javascript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
