@@ -18,13 +18,14 @@
     <body>
 
         <!--HEADER-->
-        <header id="header-height" class="my-bg-header py-3">
+        <header id="header-height" class="my-bg-header py-2">
             
-            <div class=" container-fluid  align-items-center h-100">
-                <div class="row">
+            <div class=" container-fluid h-100">
+                <div id="my-bg-header-sx" class="row align-items-center py-1">
+
                     <!--NAVBAR-->
                     <!--Brand Area-->
-                    <div id="my-bg-header-sx" class="col-2">
+                    <div  class="col-2">
                         <div class="navbar">
                             <div class="container bg-white">
                                 <a href="#" class="navbar-brand d-lg-none">
@@ -33,11 +34,8 @@
                                 <a href="#" class="navbar-brand d-sm-none d-md d-lg-block ">
                                     <img src="img/logo.svg" alt="Boolean">
                                 </a>
-                                
                             </div>
                         </div>
-
-                    
                     </div>
                     
 
@@ -55,8 +53,7 @@
                     
 
                     <!--Link Icon-->
-
-                    <div id="my-bg-header-dx" class="col-2">
+                    <div class="col-2">
                         <div class="container d-lg-flex flex-row">
                             <ul class="list-inline pt-3 text-end">
                                 <li  class="list-inline-item align-middle d-lg-inline-block d-sm-none d-md-none">
@@ -91,31 +88,111 @@
         <main class="d-flex">
 
             <!--ASIDE-->
-            <aside class="aside-main my-bg-aside py-3">
-                <div class="text-white text-center fs-6">
-                    <i class="bi bi-house-door-fill"></i>
-                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Home</span>
+            <aside class="aside-main d-flex flex-column justify-content-start flex-wrap my-bg-aside py-3">
+
+                <div class="d-flex justify-content-center text-white fs-6 m-1">
+                    <a class="ms-2 text-decoration-none text-white" href="#">
+                        <i class="me-1 bi bi-house-door-fill"></i>
+                        <span class="d-lg-inline-block d-sm-none d-md-none">Admin</span>
+                    </a>
                 </div>
 
-                <div class="text-white text-center fs-6">
-                    <i class="bi bi-reception-3"></i>
-                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Stats</span>
+                <div class="d-flex justify-content-center text-white fs-6 m-1">
+                    <a class="ms-2 text-decoration-none text-white" href="#">
+                        <i class="me-1 bi bi-reception-3"></i>
+                        <span class="d-lg-inline-block d-sm-none d-md-none">Stats</span>
+                    </a>
                 </div>
 
-                <div class="text-white text-center fs-6">
-                    <i class="bi bi-reception-4"></i>
-                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Signals</span>
+                <div class="d-flex justify-content-center text-white fs-6 m-1">
+                    <a class="ms-2text-decoration-none text-white" href="#">
+                        <i class="me-1 bi bi-reception-4"></i>
+                        <span class="d-lg-inline-block d-sm-none d-md-none">Signals</span>
+                    </a>
                 </div>
 
-                <div id="link-aside-bottom" class="text-white text-center fs-6">
-                    <i class="bi bi-gear-fill"></i>
-                    <span class="ms-2 d-lg-inline-block d-sm-none d-md-none">Admin</span>
+                <div class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle text-white fs-6">
+                    <a class="ms-2 text-decoration-none text-white" href="#">
+                        <i class="bi bi-gear-fill"></i>
+                        <span class="d-lg-inline-block d-sm-none d-md-none">Admin</span>
+                    </a>
                 </div>
             </aside>
 
             <!--SEZIONE MAIN-->
             <section>
 
+                <!--MAIN-TOP-->
+                <div class="container-fluid">
+                    <div id="my-bg-main-top" class="row py-3 d-flex align-items-center text-white">
+
+                        <!--PRIMA COLONNA-->
+
+                        <div class="col-5 d-flex flex-wrap g-0 px-2">
+                            <h2 class="fs-2">
+                                Boolean
+                            </h2>
+                            <span class="my-button-custom ms-2">
+                                Piano Blaze
+                            </span>
+
+                            <div class="d-flex align-items-center">
+                                <div class="my-button-custom">
+                                    3 app
+                                </div>
+    
+                                <span class="m-1">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+    
+                                <div class="my-button-custom me-1 d-lg-inline-block d-sm-none d-md-none">
+                                    Boolean mobile app
+                                </div>
+
+                                <div class="my-button-custom me-1 d-lg-inline-block d-sm-none d-md-none">
+                                    Boolean web app
+                                </div>
+
+                                <div class="my-button-custom me-1 d-lg-inline-block d-sm-none d-md-none">
+                                    Boolean blog app
+                                </div>
+    
+                                <div class="my-button-custom me-1 d-lg-none">
+                                    <i class="bi bi-plus"></i>
+                                </div>
+    
+                            </div>
+                        </div>
+                        
+                        <!--SECONDA COLONNA-->
+                        <div class="col-4 gx-1">
+
+                            <div>
+                                <h3 class="fs-4">Studenti online begli ultimi tre giorni</h3>
+                            </div>
+
+                            <div>
+                                <h5 class="fs-3">125</h5>
+                            </div>
+                        </div>
+
+                        <!--TERZA COLONNA-->
+                        <div class="col-3 g-0">
+                            <div class="d-flex align-items-center">
+                                <span class="fs-6 me-2">Nuovo Studente</span>
+                                <button type="button" class="btn btn-outline-light">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <!--MAIN-BOTTOM-->
+
+                
             </section>
         </main>
         
