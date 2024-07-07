@@ -22,13 +22,30 @@ main{
 
 main > aside{
     width: var(--aside-width);
+    height: 100%;
 }
 
 main > section{
     width: calc(100% - var(--aside-width));
 }
 
+/*SECTION - TABELLA*/
 
+.font-size-tab-header{
+    font-size: 14px;
+}
+
+.font-size-tab-main{
+    font-size: 12px;
+}
+
+.my-button-td-green{
+    width: max-content;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+    background-color: green;
+}
 
 /*BACKGROUND*/
 
@@ -62,9 +79,15 @@ main > section{
 
 /*Section*/
 
+#my-bg-main-bottom{
+    background-color: #F8F9FA;
+}
+
 #my-bg-main-top{
     background-color: #1C71E8;
 }
+
+
 
 
 /*COLOR LINK*/
@@ -82,14 +105,31 @@ main > section{
 
 .my-button-custom{
     display: flex;
-    vertical-align: middle;
+    text-align: center;
     height: 20px;
     background-color: #165BBA;
+    font-size: 9px;
+    margin-left: 5px;
+    padding: 5px 8px;
+}
+
+.red-circle-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    background-color: #F26551;
+    padding: 5px;
+}
+
+.gray-square-icon-td{
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    padding: 5px;
+    color: gray;
+    border-radius: 4px;
     text-align: center;
-    padding: 5px 10px;
-    width: max-content;
-    border-radius: 30px;
-    font-size: 8px;
+    margin: 4px;
 }
 
 /*RESPONSIVE*/

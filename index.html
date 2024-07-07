@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!--FontAwesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <body>
 
@@ -120,54 +120,61 @@
             </aside>
 
             <!--SEZIONE MAIN-->
-            <section>
+            <section class="overflow-auto">
 
                 <!--MAIN-TOP-->
                 <div class="container-fluid">
-                    <div id="my-bg-main-top" class="row main-top py-3 d-sm-flex flex-sm-column flex-md-row flex-lg-row align-middle text-white">
+                    <div id="my-bg-main-top" class="row main-top py-2 gy-2 d-sm-flex flex-sm-column flex-md-row-reverse flex-lg-row-reverse align-middle text-white">
 
-                        <!--PRIMA COLONNA-->
+                         <!--PRIMA COLONNA-->
+                         <div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fs-6 me-2">Nuovo Studente</span>
+                                <button type="button" class="btn btn-outline-light">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
 
-                        <div class="col-md-5 col-lg-5 col-sm-6 col-6 px-2">
+                        <!--SECONDA COLONNA-->
+
+                        <div class="col-md-5 col-lg-5 col-sm-6 col-6 order-md-last order-lg-last px-2">
                             
                             <div class="d-flex">
                                 <h2 class="fs-2">
                                     Boolean
                                 </h2>
-                                <div class="my-button-custom ms-2 align-middle">
-                                    Piano Blaze
-                                </div>
+                                <span class="badge my-button-custom">Piano Blaze</span>
                             </div>
                             
                             <div class="d-flex align-items-center">
-                                <div class="my-button-custom">
-                                    3 app
-                                </div>
+
+                                <span class="badge my-button-custom">3 app</span>
     
                                 <span class="m-1">
                                     <i class="fa-solid fa-angles-right"></i>
                                 </span>
     
-                                <div class="my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
+                                <span class="badge my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
                                     Boolean mobile app
-                                </div>
+                                </span>
 
-                                <div class="my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
+                                <span class="badge my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
                                     Boolean web app
-                                </div>
+                                </span>
 
-                                <div class="my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
+                                <span class="badge my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
                                     Boolean blog app
-                                </div>
+                                </span>
     
-                                <div class="my-button-custom me-1 d-lg-none">
+                                <span class="badge my-button-custom me-1 d-lg-none">
                                     <i class="bi bi-plus"></i>
-                                </div>
+                                </span>
     
                             </div>
                         </div>
                         
-                        <!--SECONDA COLONNA-->
+                        <!--TERZA COLONNA-->
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 gx-4">
 
                             <div>
@@ -179,26 +186,321 @@
                             </div>
                         </div>
 
-                        <!--TERZA COLONNA-->
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="d-flex align-items-center">
-                                <span class="fs-6 me-2">Nuovo Studente</span>
-                                <button type="button" class="btn btn-outline-light">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
                 
 
                 <!--MAIN-BOTTOM-->
-                <section>
-                    <div class="">
-
-                    </div>
-                </section>
                 
+                <section id="my-bg-main-bottom">
+                   
+                    <div class="row">
+
+                        <!--Prima MacroArea-->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                            <div class="container row ms-1">
+
+                                <div class="card my-2 col-12 p-0">
+        
+                                    <div class="card-header fs-3">
+                                        Prossime classi
+                                    </div>
+        
+                                    <!--TABELLA-->
+                                    <table class="table rounded-2">
+                                        <thead>
+                                            <tr class="font-size-tab-header align-middle">
+                                                <th colspan="2">Nome</th>
+                                                <th class="d-none d-sm-none d-md-inline-block d-lg-inline-block">Data Inizio</th>
+                                                <th class="d-none d-sm-none d-md-inline-block d-lg-inline-block">ROI</th>
+                                                <th>Stato</th>
+                                                <th>Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 75
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-flex d-lg-inline-block">15 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 76
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">16 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 77
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">17 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-warning text-white">Process</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 78
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">18 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 79
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">19 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-danger">Failed</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 80
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 81
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inlin-block">21 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-danger">Failed</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="font-size-tab-main align-middle">
+                                                <td colspan="2">
+                                                    <i class="red-circle-icon bi bi-code-slash text-white"></i>
+                                                    Classe 82
+                                                </td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">22 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <td class="d-flex">
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </span>
+                                                    
+                                                    <span class="gray-square-icon-td">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+        
+                                </div>
+                                
+                                <!--FAQ-->
+                                <div class="card my-2 col-12 p-0">
+                                    <div class="card-header fs-3">
+                                        F.A.Q
+                                    </div>
+
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              Come aggiungere un nuovo studente?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sit cumque adipisci facilis odit similique nesciunt sed, placeat ipsam asperiores hic fuga earum, a itaque iure veniam, excepturi deleniti laboriosam! Similique quas obcaecati facere officiis quisquam earum impedit numquam ratione explicabo culpa iusto vel expedita natus aliquam, repellendus optio magni.
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus error magni ut necessitatibus voluptates commodi suscipit alias, ducimus porro ex neque itaque beatae dicta aut reprehenderit expedita esse voluptatibus dolorem vitae voluptatum veritatis temporibus nobis laboriosam molestiae. Ducimus sequi amet fugit perferendis eveniet aliquam. Magni deleniti molestiae minus eligendi exercitationem!
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Posso usare questa dashboard da mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut mollitia omnis veritatis ex fuga dolor delectus? Commodi, saepe? Minima aliquam repudiandae quod nobis nostrum! Sed nam dignissimos facere atque enim temporibus totam accusamus deleniti, itaque nisi cupiditate deserunt dolorum ab soluta, consequatur ipsa sequi sit perferendis voluptates eius nulla molestias.
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Seconda Macroarea-->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 me-0">
+
+                            <div class="container">
+
+                                <!--TO DO LIST-->
+                                <div class="card my-2 col-12">
+                                    <div class="card-header fs-3">
+                                        To Do
+                                    </div>
+
+                                    <div class="card fw-light p-1">
+                                        <div class="form-check ms-2 my-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Kickoff nuove classi
+                                            </label>
+                                        </div>
+    
+                                        <div class="form-check ms-2 my-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Lezione su Bootstrap 5 in classe #75
+                                            </label>
+                                        </div>
+    
+                                        <div class="form-check ms-2 my-1">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Controllare username Github studenti
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <!--IMAGE CHART-->
+                                <div class="card my-2 col-12 mt-4 p-3">
+
+                                    <div class="card fw-light">
+                                        <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-5">Utenti attivi</h5>
+                                            <p class="card-text fs-6">Lista degli utenti attivi nella piattaforma nell'ultimo mese.</p>
+                                        </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item fs-6">Gennaio: 1200</li>
+                                                <li class="list-group-item fs-6">Febbraio: 800</li>
+                                                <li class="list-group-item fs-6">Marzo: 1500</li>
+                                            </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                </section>
             </section>
         </main>
         
