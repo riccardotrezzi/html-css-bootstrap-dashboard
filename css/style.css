@@ -98,7 +98,7 @@ main > section{
 @media screen and (min-width:576px) {
 
     .aside-main > span{
-        display:none;
+        display: none;
     }
 
 }
@@ -108,14 +108,13 @@ main > section{
 
     /*ASIDE*/
     .aside-main > span{
-        display:none;
+        display: none;
     }
 
     .aside-main{
         width: 70px;
     }
 
-    /*MAIN-TOP*/
 }
 
 /*LG*/
@@ -128,6 +127,4 @@ main > section{
     main > section{
         width: calc(100% - 150px);
     }
-
-
 }

@@ -27,11 +27,11 @@
                     <!--Brand Area-->
                     <div  class="col-2">
                         <div class="navbar">
-                            <div class="container bg-white">
+                            <div class="container bg-white align-middle">
                                 <a href="#" class="navbar-brand d-lg-none">
                                     <img id="logo-mobile-boolean"src="img/mobile-logo.png" alt="Boolean">
                                 </a>
-                                <a href="#" class="navbar-brand d-sm-none d-md d-lg-block ">
+                                <a href="#" class="navbar-brand d-none d-sm-none d-md-none d-lg-block">
                                     <img src="img/logo.svg" alt="Boolean">
                                 </a>
                             </div>
@@ -56,17 +56,17 @@
                     <div class="col-2">
                         <div class="container d-lg-flex flex-row">
                             <ul class="list-inline pt-3 text-end">
-                                <li  class="list-inline-item align-middle d-lg-inline-block d-sm-none d-md-none">
+                                <li  class="list-inline-item align-middle d-lg-inline-block d-none d-sm-none d-md-none">
                                     <a class="text-decoration-none fs-5" href="#">
                                         <i class="my-color-link-header bi bi-list-ul"></i>
                                     </a>
                                 </li>
-                                <li class="list-inline-item align-middle d-lg-inline-block d-sm-none d-md-none">
+                                <li class="list-inline-item align-middle d-lg-inline-block d-none d-sm-none d-md-none">
                                     <a class="text-decoration-none fs-5" href="#">
                                         <i class="my-color-link-header bi bi-question-circle-fill"></i>
                                     </a>
                                 </li>
-                                <li class="list-inline-item align-middle d-lg-inline-block d-sm-none d-md-none">
+                                <li class="list-inline-item align-middle d-lg-inline-block d-none d-sm-none d-md-none">
                                     <a class="text-decoration-none fs-5" href="#">
                                         <i class="my-color-link-header bi bi-three-dots-vertical"></i>
                                     </a>
@@ -93,28 +93,28 @@
                 <div class="d-flex justify-content-center text-white fs-6 m-1">
                     <a class="ms-2 text-decoration-none text-white" href="#">
                         <i class="me-1 bi bi-house-door-fill"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none">Admin</span>
+                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Home</span>
                     </a>
                 </div>
 
                 <div class="d-flex justify-content-center text-white fs-6 m-1">
                     <a class="ms-2 text-decoration-none text-white" href="#">
                         <i class="me-1 bi bi-reception-3"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none">Stats</span>
+                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Stats</span>
                     </a>
                 </div>
 
                 <div class="d-flex justify-content-center text-white fs-6 m-1">
                     <a class="ms-2text-decoration-none text-white" href="#">
                         <i class="me-1 bi bi-reception-4"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none">Signals</span>
+                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Signals</span>
                     </a>
                 </div>
 
                 <div class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle text-white fs-6">
                     <a class="ms-2 text-decoration-none text-white" href="#">
                         <i class="bi bi-gear-fill"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none">Admin</span>
+                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Admin</span>
                     </a>
                 </div>
             </aside>
@@ -124,18 +124,21 @@
 
                 <!--MAIN-TOP-->
                 <div class="container-fluid">
-                    <div id="my-bg-main-top" class="row py-3 d-flex align-items-center text-white">
+                    <div id="my-bg-main-top" class="row main-top py-3 d-sm-flex flex-sm-column flex-md-row flex-lg-row align-middle text-white">
 
                         <!--PRIMA COLONNA-->
 
-                        <div class="col-5 d-flex flex-wrap g-0 px-2">
-                            <h2 class="fs-2">
-                                Boolean
-                            </h2>
-                            <span class="my-button-custom ms-2">
-                                Piano Blaze
-                            </span>
-
+                        <div class="col-md-5 col-lg-5 col-sm-6 col-6 px-2">
+                            
+                            <div class="d-flex">
+                                <h2 class="fs-2">
+                                    Boolean
+                                </h2>
+                                <div class="my-button-custom ms-2 align-middle">
+                                    Piano Blaze
+                                </div>
+                            </div>
+                            
                             <div class="d-flex align-items-center">
                                 <div class="my-button-custom">
                                     3 app
@@ -145,15 +148,15 @@
                                     <i class="fa-solid fa-angles-right"></i>
                                 </span>
     
-                                <div class="my-button-custom me-1 d-lg-inline-block d-sm-none d-md-none">
+                                <div class="my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
                                     Boolean mobile app
                                 </div>
 
-                                <div class="my-button-custom me-1 d-lg-inline-block d-sm-none d-md-none">
+                                <div class="my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
                                     Boolean web app
                                 </div>
 
-                                <div class="my-button-custom me-1 d-lg-inline-block d-sm-none d-md-none">
+                                <div class="my-button-custom me-1 d-lg-inline-block d-none d-sm-none d-md-none">
                                     Boolean blog app
                                 </div>
     
@@ -165,10 +168,10 @@
                         </div>
                         
                         <!--SECONDA COLONNA-->
-                        <div class="col-4 gx-1">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 gx-4">
 
                             <div>
-                                <h3 class="fs-4">Studenti online begli ultimi tre giorni</h3>
+                                <h3 class="fs-5">Studenti online negli ultimi 30 minuti</h3>
                             </div>
 
                             <div>
@@ -177,7 +180,7 @@
                         </div>
 
                         <!--TERZA COLONNA-->
-                        <div class="col-3 g-0">
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="d-flex align-items-center">
                                 <span class="fs-6 me-2">Nuovo Studente</span>
                                 <button type="button" class="btn btn-outline-light">
@@ -186,12 +189,15 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 
 
                 <!--MAIN-BOTTOM-->
+                <section>
+                    <div class="">
 
+                    </div>
+                </section>
                 
             </section>
         </main>
