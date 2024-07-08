@@ -80,6 +80,12 @@ main > section{
 
 /*Section*/
 
+.img-tab-sz{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
 #my-bg-main-bottom{
     background-color: #F8F9FA;
 }
@@ -116,13 +122,6 @@ main > section{
     padding: 5px 8px;
 }
 
-.red-circle-icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 30%;
-    background-color: #F26551;
-    padding: 5px;
-}
 
 .gray-square-icon-td{
     width: 25px;
