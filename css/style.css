@@ -70,6 +70,7 @@ main > section{
 .my-bg-aside{
     background-color: #142940;
     position: relative;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 #link-aside-bottom{
@@ -87,7 +88,9 @@ main > section{
     background-color: #1C71E8;
 }
 
-
+.title-col-main-top{
+    font-size: 14px;
+}
 
 
 /*COLOR LINK*/
@@ -125,7 +128,7 @@ main > section{
     width: 25px;
     height: 25px;
     border: 1px solid gray;
-    padding: 5px;
+    padding: 3px;
     color: gray;
     border-radius: 4px;
     text-align: center;

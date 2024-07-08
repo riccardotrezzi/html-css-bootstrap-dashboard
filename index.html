@@ -72,9 +72,12 @@
                                     </a>
                                 </li>
                                 <li class="list-inline-item align-middle">
-                                    <a class="text-decoration-none fs-5" href="#">
+                                    
+                                    <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Profilo Fatturazione Logout">
+                                        
                                         <i class="bi bi-bell-fill" id="my-color-link-bell"></i>
-                                    </a>
+                                        
+                                      </button>
                                 </li>
                             </ul>
                         </div>
@@ -90,33 +93,38 @@
             <!--ASIDE-->
             <aside class="aside-main d-flex flex-column justify-content-start flex-wrap my-bg-aside py-3">
 
-                <div class="d-flex justify-content-center text-white fs-6 m-1">
-                    <a class="ms-2 text-decoration-none text-white" href="#">
-                        <i class="me-1 bi bi-house-door-fill"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Home</span>
-                    </a>
-                </div>
+                <ul class="list-group">
+                    <li class="text-center fs-6 m-1 ">
+                        <a class="ms-2 text-decoration-none text-white list-group-item-action" href="#">
+                            <i class="me-1 bi bi-house-door-fill"></i>
+                            <span class="d-lg-inline-block d-sm-none d-md-none d-none">Home</span>
+                        </a>
+                    </li>
 
-                <div class="d-flex justify-content-center text-white fs-6 m-1">
-                    <a class="ms-2 text-decoration-none text-white" href="#">
-                        <i class="me-1 bi bi-reception-3"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Stats</span>
-                    </a>
-                </div>
+                    <li class="text-center fs-6 m-1">
+                        <a class="ms-2 text-decoration-none text-white list-group-item-action" href="#">
+                            <i class="me-1 bi bi-reception-3"></i>
+                            <span class="d-lg-inline-block d-sm-none d-md-none d-none">Stats</span>
+                        </a>
+                    </li>
 
-                <div class="d-flex justify-content-center text-white fs-6 m-1">
-                    <a class="ms-2text-decoration-none text-white" href="#">
-                        <i class="me-1 bi bi-reception-4"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Signals</span>
-                    </a>
-                </div>
+                    <li class="text-center fs-6 m-1">
+                        <a class="ms-2 text-decoration-none text-white list-group-item-action" href="#">
+                            <i class="me-1 bi bi-reception-4"></i>
+                            <span class="d-lg-inline-block d-sm-none d-md-none d-none">Signals</span>
+                        </a>
+                    </li>
+                </ul>
 
-                <div class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle text-white fs-6">
-                    <a class="ms-2 text-decoration-none text-white" href="#">
-                        <i class="bi bi-gear-fill"></i>
-                        <span class="d-lg-inline-block d-sm-none d-md-none d-none">Admin</span>
-                    </a>
-                </div>
+                <ul>
+                    <li class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle text-white fs-6">
+                        <a class="ms-2 text-decoration-none text-white" href="#">
+                            <i class="bi bi-gear-fill"></i>
+                            <span class="d-lg-inline-block d-sm-none d-md-none d-none">Admin</span>
+                        </a>
+                    </li>
+                </ul>
+
             </aside>
 
             <!--SEZIONE MAIN-->
@@ -126,19 +134,121 @@
                 <div class="container-fluid">
                     <div id="my-bg-main-top" class="row main-top py-2 gy-2 d-sm-flex flex-sm-column flex-md-row-reverse flex-lg-row-reverse align-middle text-white">
 
-                         <!--PRIMA COLONNA-->
-                         <div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+                        <!--PRIMA COLONNA-->
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+
                             <div class="d-flex align-items-center">
-                                <span class="fs-6 me-2">Nuovo Studente</span>
-                                <button type="button" class="btn btn-outline-light">
-                                    <i class="bi bi-plus"></i>
+
+                                <span class="title-col-main-top me-2">Nuovo Studente</span>
+
+                                <!--OFFCANVAS-->
+                                <button class="btn border border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                    <i class="bi bi-plus text-white"></i>
                                 </button>
+
+                                <div class="offcanvas w-75 offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                            
+
+                                    <!--Form-->
+                                    <div class="offcanvas-body">
+
+                                        <form class="row g-3">
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" aria-label="First name">
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" aria-label="Last name">
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">E-mail</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">E-mail</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress2">
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+
+                                            <div class="col-12 col-md-4">
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 col-md-2">
+                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+
+                                            <div class="col-12 mb-3">
+                                                <label for="formFile" class="form-label">Foto</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                              </div>
+
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-1">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                            </div>
+
+                                            <div class="col-1">
+                                                <button type="submit" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!--SECONDA COLONNA-->
 
-                        <div class="col-md-5 col-lg-5 col-sm-6 col-6 order-md-last order-lg-last px-2">
+                        <div class="col-md-5 col-lg-5 col-sm-5 col-6 order-md-last order-lg-last px-2">
                             
                             <div class="d-flex">
                                 <h2 class="fs-2">
@@ -178,7 +288,7 @@
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 gx-4">
 
                             <div>
-                                <h3 class="fs-5">Studenti online negli ultimi 30 minuti</h3>
+                                <h3 class="title-col-main-top">Studenti online negli ultimi 30 minuti</h3>
                             </div>
 
                             <div>
@@ -208,12 +318,12 @@
                                     </div>
         
                                     <!--TABELLA-->
-                                    <table class="table rounded-2">
+                                    <table class="table rounded-2 mb-0 table-hover">
                                         <thead>
                                             <tr class="font-size-tab-header align-middle">
                                                 <th colspan="2">Nome</th>
                                                 <th class="d-none d-sm-none d-md-inline-block d-lg-inline-block">Data Inizio</th>
-                                                <th class="d-none d-sm-none d-md-inline-block d-lg-inline-block">ROI</th>
+                                                <th class="d-none d-sm-none d-md--inline-block d-lg-inline-block">ROI</th>
                                                 <th>Stato</th>
                                                 <th>Azioni</th>
                                             </tr>
@@ -224,7 +334,7 @@
                                                     <i class="red-circle-icon bi bi-code-slash text-white"></i>
                                                     Classe 75
                                                 </td>
-                                                <td class="d-none d-sm-none d-md-flex d-lg-inline-block">15 Febbraio 2021</td>
+                                                <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">15 Febbraio 2021</td>
                                                 <td class="d-none d-sm-none d-md-inline-block d-lg-inline-block">20%</td>
                                                 <td>
                                                     <span class="badge text-bg-success">Done</span>
@@ -406,8 +516,8 @@
                                           </h2>
                                           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sit cumque adipisci facilis odit similique nesciunt sed, placeat ipsam asperiores hic fuga earum, a itaque iure veniam, excepturi deleniti laboriosam! Similique quas obcaecati facere officiis quisquam earum impedit numquam ratione explicabo culpa iusto vel expedita natus aliquam, repellendus optio magni.
-                                              </div>
+                                               Clicca sul + in alto nella sezione blu.
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
@@ -418,7 +528,7 @@
                                           </h2>
                                           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus error magni ut necessitatibus voluptates commodi suscipit alias, ducimus porro ex neque itaque beatae dicta aut reprehenderit expedita esse voluptatibus dolorem vitae voluptatum veritatis temporibus nobis laboriosam molestiae. Ducimus sequi amet fugit perferendis eveniet aliquam. Magni deleniti molestiae minus eligendi exercitationem!
+                                                Clicca sulla icona della campanella.
                                             </div>
                                           </div>
                                         </div>
@@ -450,28 +560,34 @@
                                         To Do
                                     </div>
 
-                                    <div class="card fw-light p-1">
-                                        <div class="form-check ms-2 my-1">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                            Kickoff nuove classi
-                                            </label>
-                                        </div>
-    
-                                        <div class="form-check ms-2 my-1">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                            Lezione su Bootstrap 5 in classe #75
-                                            </label>
-                                        </div>
-    
-                                        <div class="form-check ms-2 my-1">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                            Controllare username Github studenti
-                                            </label>
-                                        </div>
-                                    </div>
+                                    <ul class="list-group fw-light p-2">
+                                        <li class="list-group-item">
+                                            <div class="form-check ms-2 my-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Kickoff nuove classi
+                                                </label>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="list-group-item">
+                                            <div class="form-check ms-2 my-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Lezione su Bootstrap 5 in classe #75
+                                                </label>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="form-check ms-2 my-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Controllare username Github studenti
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
                                     
                                 </div>
 
